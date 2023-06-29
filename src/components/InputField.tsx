@@ -7,8 +7,10 @@ interface Props {
   handleAdd: (e: React.FormEvent) => void;
 }
 
-const InputField = ({ toDo, setToDo, handleAdd }: Props) => {
-  // const InputField: React.FC<Props> = ({ toDo, setToDo }) => { // Another syntax for properties inheritance.
+
+
+//const InputField = ({ toDo, setToDo, handleAdd }: Props) => {
+ const InputField: React.FC<Props> = ({ toDo, setToDo, handleAdd }) => { // Another syntax for properties inheritance.
 
   const inputRef = useRef<HTMLInputElement>(null);
 
